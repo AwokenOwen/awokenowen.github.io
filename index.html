@@ -1,5 +1,110 @@
 <!DOCTYPE html>
+<html>
+<style>
+    header{
+        width: 100%;
+        top: 0;
+        background-color: rgb(81, 51, 7);    
+        font-family: monospace;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: solid 3px black;
+    }
+    body{   
+        height: auto;
+        background-color: rgb(47, 79, 66);
+        color: antiquewhite;
+        text-align: center;
+        font-family: monospace;
+        font-size: large;
+    }
+    #Profile{
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: 1;
+        justify-content: center;
+        height: 300px;
+        gap: 100px;
+    }
+    #MugshotImg{
+        height: 300px;
+        object-fit: cover;
+        border: solid 3.5px black;
+    }
+    #SiteName{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    #linkImages{
+        height: 50px;
+        object-fit: cover;
+    }
+    .Links{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    .description{
+        max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        background-color: rgb(81, 51, 7);
+        border: solid 3px black;
+    }
+    #descriptionText{
+        margin: 10px;
+    }
+    #Work{
+        margin-top: 150px;
+    }
+    a{
+        text-decoration: none;
+        color: antiquewhite;
+    }
+    .LinksToWork{
+        font-size: 25px;
+    }
+</style>
 <head>
     <title>Owen Knizak's Portfolio</title>
-    <h1>Owen Knizak's Portfolio</h1>
 </head>
+<header>
+    <div id="SiteName">    
+        <h1><a href="https://awokenowen.github.io">Owen Knizak's Portfolio</h1>
+    </div>
+    <div class="Links">   
+        <a href="https://github.com/AwokenOwen" target="_blank"><img src="github.png" id="linkImages"></a>
+        <a href="https://www.linkedin.com/in/owen-knizak/" target="_blank"><img src="LinkedIn.png" id="linkImages"></a>
+    </div>
+</header>
+<main>
+    <body>
+        <div id="Profile">
+            <div class="MugshotBox">
+                <img src="Mugshot.jpg" alt="Mugshot" id="MugshotImg">
+            </div>
+            <div class="description">
+                <p id="descriptionText">
+                    Hello, my name is Owen Knizak. I am currently completing my Bachelor of Science in Computer Science, with a minor in Game Design, at Worcester Polytechnic Institute.
+                    My work focuses on game development and interactive systems, with experience in Unity (C#), Unreal Engine (Blueprints and C++), and general C++ engine programming.
+                    In addition to my programming background, I am proficient as a Technical Artist and Audio Engineer, allowing me to contribute to a wide range of technical and creative areas within a project.
+                    This portfolio website, which I developed myself, showcases a collection of my projects. Thank you for visiting and taking the time to explore my work.
+                </p>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div id="Work">
+            <div class="LinksToWork">   
+                <a href="" >| Coding Work |</a>
+                <a href="" >| Tech Art Work |</a>
+                <a href="" >| Audio Work |</a>
+            </div>
+        </div>
+    </body>
+</main>
+</html>

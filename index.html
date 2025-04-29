@@ -2,6 +2,7 @@
 <html>
 <style>
     header{
+        position: sticky;
         width: 100%;
         top: 0;
         background-color: rgb(81, 51, 7);    
@@ -18,6 +19,9 @@
         text-align: center;
         font-family: monospace;
         font-size: large;
+    }
+    body::-webkit-scrollbar{
+        display: none;
     }
     #Profile{
         padding-top: 50px;
@@ -57,15 +61,47 @@
     #descriptionText{
         margin: 10px;
     }
-    #Work{
-        margin-top: 150px;
-    }
     a{
         text-decoration: none;
         color: antiquewhite;
     }
     .LinksToWork{
+        margin-top: 100px;
         font-size: 25px;
+
+    }
+    .LinksToGameWork{
+        margin: 30px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    .Games{
+        display: flex;
+        margin: 20px;
+        min-width: 500px;
+        min-height: 100px;
+        flex-direction: column;
+        max-height: 500px;
+        background-color: rgb(81, 51, 7);
+        border: solid 3px black;
+    }
+    h2{
+        margin-top: 70px;
+        white-space: nowrap;
+    }
+    #GameImg{
+        margin-top: 20px;
+        max-width: 300px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    p{
+        margin: 0;
     }
 </style>
 <head>
@@ -78,6 +114,7 @@
     <div class="Links">   
         <a href="https://github.com/AwokenOwen" target="_blank"><img src="github.png" id="linkImages"></a>
         <a href="https://www.linkedin.com/in/owen-knizak/" target="_blank"><img src="LinkedIn.png" id="linkImages"></a>
+        <a href="https://awokenowen.itch.io/" target="_blank"><img src="itchLogo.png" id="linkImages"></a>
     </div>
 </header>
 <main>
@@ -95,10 +132,40 @@
                 </p>
             </div>
         </div>
-        <div>
-
-        </div>
         <div id="Work">
+            <h2>Games I've Worked On</h2>
+            <div class="LinksToGameWork">
+                <div class="Games">
+                   <p>Duck Hunt Dragonfly</p>
+                   <p>Programmer</p>
+                    <a href="https://aegross.itch.io/duck-hunt-dragonfly" target="_blank"><img src="DuckHunt.png" id="GameImg"></a>
+                </div>
+                <div class="Games">
+                    <p>Sleeping with the Roaches</p>
+                    <p>Programmer and Audio Engineer</p>
+                    <a href="https://cu5tin.itch.io/sleeping-with-the-roaches" target="_blank"><img src="roaches.png" id="GameImg"></a>
+                </div>
+                <div class="Games">
+                    <p>Blob's Speedrunning Adventure</p>
+                    <p>Sole Developer</p>
+                    <a href="https://awokenowen.itch.io/blobs-speedrunning-adventure" target="_blank"><img src="Blob.png" id="GameImg"></a>
+                </div>
+                <div class="Games">
+                    <p>Pizzpazza</p>
+                    <p>Sole Programmer</p>
+                    <a href="https://awokenowen.itch.io/pizzpazzas" target="_blank"><img src="Pizzpazza.png" id="GameImg"></a>
+                </div>
+                <div class="Games">
+                    <p>The Communion</p>
+                    <p>Sole Programmer</p>
+                    <a href="https://awokenowen.itch.io/the-communion" target="_blank"><img src="Communion.png" id="GameImg"></a>
+                </div>
+                <div class="Games">
+                    <p>Memoria Altera</p>
+                    <p>Programmer</p>
+                    <a href="https://store.steampowered.com/app/3688120/Memoria_Altera/?curator_clanid=4777282" target="_blank"><img src="MemoriaAltera.jpg" id="GameImg"></a>
+                </div>
+            </div>
             <div class="LinksToWork">   
                 <a href="" >| Coding Work |</a>
                 <a href="" >| Tech Art Work |</a>
